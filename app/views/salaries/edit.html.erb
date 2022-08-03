@@ -1,0 +1,13 @@
+<%= form_with(model: @salary, local: true ) do |f| %>
+<%= f.label :basic_pay %><br />
+<%= f.text_field :basic_pay, class:"form-label form-control form-control-lg", placeholder: "Basic_pay"  %><br/>
+<%= f.label :hra %><br />
+<%= f.text_field :hra, class:"form-label form-control form-control-lg", placeholder: "HRA"%><br/>
+<%= f.label :allowance %><br />
+<%= f.text_field :allowance, class:"form-label form-control form-control-lg", placeholder: "Allowance"%><br/>
+<%= f.label :deduction %><br />
+<%= f.text_field :deduction, class:"form-label form-control form-control-lg", placeholder: "Deduction"%><br/>
+<p></p>
+<%= f.submit "Update" , class:"btn btn-success" %></p>
+  <p><button><%= link_to 'return', home_index_path %></button></p>
+<% end %>

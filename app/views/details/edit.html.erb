@@ -1,0 +1,25 @@
+<%= form_with(model: @detail, local: true ) do |f| %>
+  <%= f.label :name %><br />
+<%= f.text_field :name, class:"form-label form-control form-control-lg", placeholder: "Name"  %><br/>
+  <%= f.label :phone_number %><br />
+  <%= f.text_field :phone_number, class:"form-label form-control form-control-lg", placeholder: "Phone number"%><br/>
+  <%= f.label :dob %><br />
+  <%= f.date_field :dob, class:"form-label form-control form-control-lg", placeholder: "dob"%><br/>
+  <%= f.label :email %><br />
+  <%= f.email_field :email, class:"form-label form-control form-control-lg", placeholder: "email"%><br/>
+  <%= f.label :fathers_name %><br />
+  <%= f.text_field :father_name, class:"form-label form-control form-control-lg", placeholder: "Father's name"%><br/>
+  <%= f.label :mothers_name %><br />
+  <%= f.text_field :mother_name, class:"form-label form-control form-control-lg", placeholder: "Mother's name"%><br/>
+  <%= f.label :address %><br />
+  <%= f.text_field :address, class:"form-label form-control form-control-lg", placeholder: "Mother's name"%><br/>
+  <%= f.label :experience %><br />
+  <%= f.text_field :experience, class:"form-label form-control form-control-lg", placeholder: "Mother's name"%><br/>
+  <p></p>
+  <%= f.submit "Update" %></p>
+  <p><button><%= link_to 'return', home_index_path %></button></p>
+
+<% end %>
+<!--<%#= link_to 'Edit Qualification', edit_qualification_path(@employee.qualification.id), type:"button", class:"btn btn-primary"%><br/>-->
+<!--<button><%#= link_to 'Edit Leave', edit_leafe_path(@employee.leave.id), type:"button", class:"btn btn-primary" %><br/>-->
+<!--<button><%#= link_to 'Edit Salary', edit_salary_path(@employee.salary.id), type:"button", class:"btn btn-primary" %><br/>-->

@@ -1,0 +1,17 @@
+<%= form_with(model: @leave, local: true ) do |f| %>
+  <%= f.label :sick %><br />
+  <%= f.text_field :sick, class:"form-label form-control form-control-lg", placeholder: "sick"  %><br/>
+  <%= f.label :privileged %><br />
+  <%= f.text_field :privileged, class:"form-label form-control form-control-lg", placeholder: "privileged"%><br/>
+  <%= f.label :breavement %><br />
+  <%= f.text_field :breavement, class:"form-label form-control form-control-lg", placeholder: "breavement"%><br/>
+  <%= f.label :study_leave %><br />
+  <%= f.text_field :study_leave, class:"form-label form-control form-control-lg", placeholder: "study_leave"%><br/>
+  <%= f.label :time_off %><br />
+  <%= f.text_field :time_off, class:"form-label form-control form-control-lg", placeholder: "time_off"%><br/>
+  <%= f.label :maternity %><br />
+  <%= f.text_field :maternity, class:"form-label form-control form-control-lg", placeholder: "maternity"%><br/>
+
+  <%= f.submit "Update" , class:"btn btn-success" %></p>
+  <p><button><%= link_to 'return', home_index_path %></button></p>
+<% end %>
